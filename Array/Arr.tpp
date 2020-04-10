@@ -2,7 +2,7 @@
  * @Author: Senkita
  * @Date: 2020-04-10 09:49:39
  * @LastEditEditor: Senkita
- * @LastEditTime: 2020-04-10 10:12:38
+ * @LastEditTime: 2020-04-10 10:32:44
  * @Description: Implement interfaces.
  */
 
@@ -36,7 +36,7 @@ T Arr<T>::del(int index){
     {
         throw "Out Of Range!";
     }
-    int element = arr[index];
+    T element = arr[index];
     for (int i = index; i >= size - 1; i++){
         arr[i] = arr[i + 1];
     }
